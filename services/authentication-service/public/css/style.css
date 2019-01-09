@@ -1,0 +1,14 @@
+input[type=text] {
+    background: wheat;
+    color: black;
+}
+
+input[type=password] {
+    background: wheat;
+    color: black;
+}
+
+h1 {
+    font-family: "Arial, Helvetica, sans-serif";
+    color: blueviolet;
+}

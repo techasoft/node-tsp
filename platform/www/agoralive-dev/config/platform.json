@@ -1,0 +1,55 @@
+{
+  "configurations": [{
+    "services": [{
+      "WebHostingService": {
+        "sites": [{
+            "site_name": "agoralive - production",
+            "site_directory": "www/agoralive",
+            "resource_directory": "public",
+            "domain": "www.agoralive.gr",
+            "web_hosts": [{
+                "address": "127.0.0.1",
+                "port": "3000"
+              },
+              {
+                "address": "127.0.0.1",
+                "port": "3001"
+              }
+            ],
+            "routes": [{
+                "methods": ["GET"],
+                "url": "/api/v001/default",
+                "handler": "defaultHandler"
+              },
+              {
+                "methods": ["GET"],
+                "url": "/api/v001/default/{data}",
+                "handler": "defaultHandler"
+              },
+              {
+                "methods": ["POST"],
+                "url": "/api/v001/login",
+                "handler": "loginHandler"
+              }
+            ]
+          },
+          {
+            "site_name": "agoralive - development",
+            "site_directory": "www/agoralive-dev",
+            "resource_directory": "public",
+            "domain": "www.agoralive.gr",
+            "web_hosts": [{
+              "address": "127.0.0.1",
+              "port": "4000"
+            }],
+            "routes": [{
+              "methods": ["GET"],
+              "url": "/api/v001/default",
+              "handler": "defaultHandler"
+            }]
+          }
+        ]
+      }
+    }]
+  }]
+}

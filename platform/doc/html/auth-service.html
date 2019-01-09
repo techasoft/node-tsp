@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>tsp - authentication service</title>
+</head>
+
+<body class="w3-theme-dark">
+    <h1>Authentication Service - API</h1>
+    <h3 class="w3-theme-l2">Process SignIN - method GET</h3>
+    <p>
+        Ο client στέλνει ένα GET request στον authentication server, με υποχρεωτική την παράμετρο appID. Εάν ο authentication server
+        δεν εντοπίσει την συγκεκριμένη παράμετρο, επιστρέφει μήνυμα λάθους και τερματίζει την διαδικασία. Εφόσον ο authentication
+        server εντοπίσει την παράμετρο appID, ψάχνει στον εσωτερικό πίνακα αντιστοίχισης για να βρεί την βάση δεδομένων της
+        εφαρμογής στην οποία θα γίνει το SignIn. Εάν εντοπιστεί η βάση δεδομένων, ο authentication server επιστρέφει - ανάλογα
+        με τον client - αντίστοιχη φόρμα SignIn. Στην φόρμα θα περιέχονται τα πεδία username/email και password, με τα οποία
+        ο client επιθυμεί να κάνει SignIn.
+    </p>
+    <div style="margin: 2pt; text-align: center">
+        <img src="img/Process_Diagram-SignIn-Method-GET.png" />
+    </div>
+    <div style="margin: 2pt; text-align: center">
+        <img src="img/Flow_Diagram-SignIn-Method-GET.png" />
+    </div>
+</body>
+
+</html>

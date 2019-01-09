@@ -1,0 +1,24 @@
+{
+  "name": "web-site-service",
+  "version": "0.0.1",
+  "description": "The techasoft web site service",
+  "main": "bin/service.js",
+  "bin": {
+    "backend": "service.js"
+  },
+  "directories": {
+    "doc": "doc",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Papastergiou Apostolos",
+  "license": "MIT",
+  "dependencies": {
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "serve-index": "^1.9.1"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>agoralive-dev</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1 class="red">agoralive-dev index page</h1>
+  <div id="app">
+    {{ message }}
+  </div>
+  <div id="app-2">
+    <span v-bind:title="message">
+      Hover your mouse over me for a few seconds to see my dynamically bound title!
+    </span>
+  </div>
+  <div id="app-3">
+    <transition name="fade">
+      <span v-if="seen">Now you see me</span>
+    </transition>
+  </div>
+  <div id="app-4">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div>
+  <script src="js/vue.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

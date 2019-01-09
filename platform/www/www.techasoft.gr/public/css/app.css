@@ -1,0 +1,499 @@
+/*
+* =======================================================
+* Document Info
+* =======================================================
+*
+*  @Doc Description: techasoft web site main CSS Custom Stylesheet (Based at Foundation 6.4.2 CSS Framework   http://foundation.zurb.com/)
+*  @Author: d4rth0nyx
+*  @Creation Date: 2017-11-29
+*  @Copyright: Copyright (c) 2017 techasoft - http://techasoft.gr
+*  @Version: 1.0.1
+*
+*  @Status: Development
+*  @Last Modified Date: 2017-11-29
+*  @Last Modify User: d4rth0nyx
+*
+*
+* //////////////// Actions TO DO //////////////////////
+
+1) 
+2) 
+3) 
+4) 
+5) 
+========================================================= 
+*/
+
+
+/* TASoft Primary Styles
+==================================*/
+body {
+	background:#25202b;
+	font-family: 'Roboto', sans-serif;
+  color:#dcf5fa;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+  color:#dcf5fa;
+  text-align:center;
+}
+h2{
+	color:#dcf5fa;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-align:center;
+	text-transform:uppercase;
+}
+h3{
+	font-family: 'Roboto', sans-serif;
+	color:#dcf5fa;
+  text-align:center;
+
+}
+h4{
+	font-family: 'Roboto', sans-serif;
+	color:#dcf5fa;
+  text-align:center;
+}
+h5{
+	font-family: 'Roboto', sans-serif;
+	color:#dcf5fa;
+  text-align:center;
+}
+h6{
+	color:#dcf5fa;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+p{
+	line-height:1.5em;
+}
+
+
+/* TASoft Animation Timers
+==================================*/
+.TASoft-delay-02s {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+.TASoft-delay-03s {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+.TASoft-delay-04s {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+.TASoft-delay-05s {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.TASoft-delay-06s {
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+}
+
+.TASoft-delay-07s {
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+}
+.TASoft-delay-08s {
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
+
+.TASoft-delay-09s {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+.TASoft-delay-1s {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.TASoft-delay-12s {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+/* TASoft Main site Canvas
+==================================*/
+canvas{
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	height: auto;
+}
+/* Custom back-on-top button
+==================================*/
+.back-top {
+  position: fixed;
+  bottom: 1%;
+	right: 1%;
+	z-index: 99;
+}
+.back-top a {
+  color: #919191;
+}
+.back-top:hover a {
+  color: #6dd32e;
+} 
+/* TASoft Header section Styles
+==================================*/
+
+.TASoft-header{
+  background: #222222;/* Old Browsers */
+  background: -moz-linear-gradient(-45deg, #0727a9 0%, #1f2534 100%); /* FF3.6+ */
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, #0727a9), color-stop(100%, #1f2534));/* Chrome, Safari4+ */
+  background: -webkit-linear-gradient(-45deg, #0727a9 0%, #1f2534 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(-45deg, #0727a9 0%, #1f2534 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(-45deg, #0727a9 0%, #1f2534 100%); /* IE 10+ */
+  background: linear-gradient(135deg, #0727a9 0%, #1f2534 100%);/* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0727a9', endColorstr='#1f2534', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+
+  max-width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  padding:5em 5em 0em 5em;
+}
+.TASoft-header h1{
+	font-family: 'Roboto', sans-serif;
+  color:#dcf5fa;
+  text-align:center;
+	font-weight:bold;
+	padding:1em 0em 0em 0em;
+  
+}
+.TASoft-header h5{
+	font-family: 'Roboto', sans-serif;
+	color: #dcf5fa;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.TASoft-header figure{
+  text-align:center;
+}
+.TASoft-header img{
+	width: auto;
+	height: auto;
+}
+/* TASoft Main-Navigation section Styles
+==================================*/
+
+.TASoft-main-navigation-outer{
+	background:#1f2534;
+	border-bottom:0.15rem solid #0980fb;
+	box-shadow:0 1rem 2rem -3rem #04ccff;
+}
+.TASoft-main-navigation-outer .menu{
+	background:#1f2534;
+}
+.TASoft-main-navigation {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.TASoft-main-navigation * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.TASoft-main-navigation li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0; 
+}
+.TASoft-main-navigation a {
+
+
+	
+	padding: 0.4em 0.4em 0.2em; 
+  color: #0980fb;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.TASoft-main-navigation a:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2px;
+	height: 0px;
+	background: #04ccff;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+
+}
+.TASoft-main-navigation a:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background: #04ccff;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+
+
+
+
+	/*  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #990099;
+  width: 0; */
+}
+.TASoft-main-navigation a:before {
+  top: 0;
+  left: 0;
+}
+.TASoft-main-navigation a:after {
+  bottom: 0;
+  right: 0;
+}
+.TASoft-main-navigation a:hover,
+.TASoft-main-navigation .current a {
+  color: #04ccff;
+}
+.TASoft-main-navigation a:hover:before,
+.TASoft-main-navigation .current a:before {
+	height: 100%;
+}
+.TASoft-main-navigation a:hover:after,
+.TASoft-main-navigation .current a:after {
+	opacity: 0.3;
+	top: 100%;
+}
+
+
+
+/* TASoft Company section Styles
+==================================*/
+
+.TASoft-company{
+
+	background: #0728a9;/* Old Browsers */
+	background: -moz-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, #0728a9), color-stop(100%, #0772ac));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* IE 10+ */
+	background: linear-gradient(to right, #0728a9 0%, #0772ac 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0728a9', endColorstr='#0772ac', GradientType=1 );/* IE6-9 */
+	
+}
+.TASoft-company span{
+	color:#0728a9;
+}
+.TASoft-company-list-icon i{
+	
+
+	display:block;
+	color:#0728a9;
+	
+}
+.TASoft-company img{
+	width: 20rem;
+	height: auto;
+}
+/* TASoft Services section Styles
+==================================*/
+
+.TASoft-services{
+background: #0772ac;/* Old Browsers */
+background: -moz-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* FF3.6+ */
+background: -webkit-gradient(left top, right top, color-stop(0%, #0772ac), color-stop(100%, #0728a9));/* Chrome, Safari4+ */
+background: -webkit-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* IE 10+ */
+background: linear-gradient(to right, #0772ac 0%, #0728a9 100%);/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0772ac', endColorstr='#0728a9', GradientType=1 );/* IE6-9 */
+	
+}
+.TASoft-services span{
+	color:#0728a9;
+}
+.TASoft-services-list-icon i{
+	
+
+	display:block;
+	color:#0728a9;
+	
+}
+
+
+/* TASoft Products section Styles
+==================================*/
+
+.TASoft-products{
+
+	background: #0728a9;/* Old Browsers */
+	background: -moz-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, #0728a9), color-stop(100%, #0772ac));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* IE 10+ */
+	background: linear-gradient(to right, #0728a9 0%, #0772ac 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0728a9', endColorstr='#0772ac', GradientType=1 );/* IE6-9 */
+	
+}
+.TASoft-products span{
+	color:#0728a9;
+}
+.TASoft-products-list-icon i{
+	
+
+	display:block;
+	color:#0728a9;
+	
+}
+
+/* TASoft Solutions section Styles
+==================================*/
+
+.TASoft-solutions{
+	
+	background: #0772ac;/* Old Browsers */
+	background: -moz-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, #0772ac), color-stop(100%, #0728a9));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* IE 10+ */
+	background: linear-gradient(to right, #0772ac 0%, #0728a9 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0772ac', endColorstr='#0728a9', GradientType=1 );/* IE6-9 */
+}
+.TASoft-solutions span{
+	color:#0728a9;
+}
+.TASoft-solutions-list-icon i{
+	
+
+	display:block;
+	color:#0728a9;
+	
+}
+
+
+/* TASoft Research section Styles
+==================================*/
+
+.TASoft-research{
+	background: #0728a9;/* Old Browsers */
+	background: -moz-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, #0728a9), color-stop(100%, #0772ac));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0728a9 0%, #0772ac 100%); /* IE 10+ */
+	background: linear-gradient(to right, #0728a9 0%, #0772ac 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0728a9', endColorstr='#0772ac', GradientType=1 );/* IE6-9 */
+}
+.TASoft-research span{
+	color:#0728a9;
+}
+.TASoft-research-list-icon i{
+	
+
+	display:block;
+	color:#0728a9;
+	
+}
+
+/* TASoft Contact section Styles
+==================================*/
+
+.TASoft-contact{
+	background: #0772ac;/* Old Browsers */
+	background: -moz-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, #0772ac), color-stop(100%, #0728a9));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #0772ac 0%, #0728a9 100%); /* IE 10+ */
+	background: linear-gradient(to right, #0772ac 0%, #0728a9 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0772ac', endColorstr='#0728a9', GradientType=1 );/* IE6-9 */
+}
+.TASoft-contact span{
+	color:#0728a9;
+}
+.TASoft-contact i{
+/*  display:block; We want to show inline icon and text */
+	color:#0728a9;
+}
+/* TASoft Group section Styles
+==================================*/
+
+.TASoft-group-outer{
+	background:#111111;
+	border-bottom:0.15rem solid #858585;
+	box-shadow:0 1rem 2rem -3rem #990099;
+}
+.TASoft-group-outer .menu{
+	background:#111111;
+	
+}
+.TASoft-group-outer h6{
+	color: #dcf5fa;
+  
+}
+
+.TASoft-group-outer img{
+	height: 1.7rem;
+	width: auto;
+	
+}
+/* TASoft Footer section Styles
+==================================*/
+
+.TASoft-footer{
+	
+  
+
+	background: #3f51b5;/* Old Browsers */
+	background: -moz-linear-gradient(45deg, #0728a9 0%, #000000 40%, #000000 60%, #04ccff 100%); /* FF3.6+ */
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, #0728a9), color-stop(40%, #000000), color-stop(60%, #000000), color-stop(100%, #04ccff));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(45deg, #0728a9 0%, #000000 40%, #000000 60%, #04ccff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #0728a9 0%, #000000 40%, #000000 60%, #04ccff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #0728a9 0%, #000000 40%, #000000 60%, #04ccff 100%); /* IE 10+ */
+	background: linear-gradient(45deg, #0728a9 0%, #000000 40%, #000000 60%, #04ccff 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0728a9', endColorstr='#04ccff', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+	
+
+  padding:0.5rem;
+}
+.TASoft-footer img{
+	height: 2.2rem;
+	width: auto;
+}
+.TASoft-copyright, .TASoft-credits{
+	color:#cccccc;
+	font-size:14px;
+	display:block;
+	text-align:center;
+	padding:0.2rem;
+}
+.TASoft-copyright a, .TASoft-credits a{
+	color:#673AB7;
+	font-weight:600;
+	text-decoration: none;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	
+}
+.TASoft-copyright a:hover, .TASoft-credits a:hover {
+	color: #990099;
+}
+
+/* ---------- TEST CODE Class -------*/
+.test-code *{
+	border-style: solid;
+	border-width: 0.1rem;
+	border-color: red;
+}
+

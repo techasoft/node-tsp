@@ -1,0 +1,358 @@
+/*
+* =======================================================
+* Document Info
+* =======================================================
+*
+*  @Doc Description: agoralive web site main CSS Custom Stylesheet (Based at Foundation 6.4.2 CSS Framework   http://foundation.zurb.com/)
+*  @Author: d4rth0nyx
+*  @Creation Date: 2017-11-29
+*  @Copyright: Copyright (c) 2017 techasoft - http://techasoft.gr
+*  @Version: 1.0.1
+*
+*  @Status: Development
+*  @Last Modified Date: 2017-11-29
+*  @Last Modify User: d4rth0nyx
+*
+*
+* //////////////// Actions TO DO //////////////////////
+
+1) 
+2) 
+3) 
+4) 
+5) 
+========================================================= 
+*/
+
+
+/* ALive Primary Styles
+==================================*/
+body {
+	background:#141414;
+	font-family: 'Roboto', sans-serif;
+  color:#a2b7ae;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+  color:#3f51b5;
+  text-align:center;
+}
+h2{
+	color:#242424;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-align:center;
+	text-transform:uppercase;
+}
+h3{
+	font-family: 'Roboto', sans-serif;
+	color:#a2b7ae;
+  text-align:center;
+
+}
+h4{
+	font-family: 'Roboto', sans-serif;
+	color:#242424;
+  text-align:center;
+}
+h5{
+	font-family: 'Roboto', sans-serif;
+	color:#a2b7ae;
+  text-align:center;
+}
+h6{
+	color:#303030;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+p{
+	line-height:1.5em;
+}
+
+
+/* ALive Animation Timers
+==================================*/
+.ALive-delay-02s {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+.ALive-delay-03s {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+.ALive-delay-04s {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+.ALive-delay-05s {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.ALive-delay-06s {
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+}
+
+.ALive-delay-07s {
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+}
+.ALive-delay-08s {
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
+
+.ALive-delay-09s {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+.ALive-delay-1s {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.ALive-delay-12s {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+/* ALive Main site Canvas
+==================================*/
+canvas{
+	margin: 0%;
+	padding: 0%;
+	width: 100%;
+	height: auto;
+}
+/* Custom back-on-top button
+==================================*/
+.back-top {
+  position: fixed;
+  bottom: 1%;
+	right: 1%;
+	z-index: 99;
+}
+.back-top a {
+  color: #919191;
+}
+.back-top:hover a {
+  color: #6dd32e;
+} 
+/* ALive Header section Styles
+==================================*/
+
+.ALive-header{
+  background:url(../images/header-image.svg);
+
+  width: 100%;
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding:5em 5em 0em 5em; 
+	
+	
+}
+.ALive-header h1{
+	font-family: 'Roboto', sans-serif;
+  color:#3f51b5;
+  text-align:center;
+	font-weight:bold;
+	padding:1em 0em 0em 0em;
+  
+}
+.ALive-header h5{
+	font-family: 'Roboto', sans-serif;
+	color: #404040;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.ALive-header figure{
+  text-align:center;
+}
+.ALive-header img{
+	width: auto;
+	height: auto;
+}
+/* ALive Navigation section Styles
+==================================*/
+
+.ALive-main-navigation-outer{
+	background:#57bc90;
+	border-bottom:0.15rem solid #616161;
+	box-shadow:0 1rem 2rem -3rem #2e7d32;
+}
+.ALive-main-navigation-outer .menu{
+	background:#57bc90;
+}
+.ALive-main-navigation {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.ALive-main-navigation * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.ALive-main-navigation li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0; 
+}
+.ALive-main-navigation a {
+
+
+	
+	padding: 0.4em 0.4em 0.2em; 
+  color: #015249;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.ALive-main-navigation a:before {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2px;
+	height: 0px;
+	background: #015249;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+
+}
+.ALive-main-navigation a:after {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 2px;
+	background: #015249;
+	content: "";
+	opacity: 1;
+	transition: all 0.3s;
+
+
+
+
+	/*  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #990099;
+  width: 0; */
+}
+.ALive-main-navigation a:before {
+  top: 0;
+  left: 0;
+}
+.ALive-main-navigation a:after {
+  bottom: 0;
+  right: 0;
+}
+.ALive-main-navigation a:hover,
+.ALive-main-navigation .current a {
+  color: #015249;
+}
+.ALive-main-navigation a:hover:before,
+.ALive-main-navigation .current a:before {
+	height: 100%;
+}
+.ALive-main-navigation a:hover:after,
+.ALive-main-navigation .current a:after {
+	opacity: 0.3;
+	top: 100%;
+}
+
+
+/* ALive Company section Styles
+==================================*/
+
+.ALive-company{
+	background:#212121;
+}
+
+
+/* ALive Services section Styles
+==================================*/
+
+.ALive-services{
+	background:#57bc90;
+}
+.ALive-services-list-icon i{
+	
+	font-size:1.5rem;
+	display:block;
+	color:#616161;
+	
+}
+
+
+/* ALive Group section Styles
+==================================*/
+
+.ALive-group-outer{
+	background:#111111;
+	border-bottom:0.15rem solid #858585;
+	box-shadow:0 1rem 2rem -3rem #2e7d32;
+}
+.ALive-group-outer .menu{
+	background:#111111;
+}
+.ALive-group-outer h6{
+	color: #bcbcbc;
+  
+}
+.ALive-group-outer img{
+	height: 1.7rem;
+	width: auto;
+	
+}
+/* ALive Footer section Styles
+==================================*/
+
+.ALive-footer{
+	
+	background: #212121;/* Old Browsers */
+	background: -moz-linear-gradient(45deg, #616161 0%, #000000 40%, #000000 60%, #2e7d32 100%); /* FF3.6+ */
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, #616161), color-stop(40%, #000000), color-stop(60%, #000000), color-stop(100%, #2e7d32));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(45deg, #616161 0%, #000000 40%, #000000 60%, #2e7d32 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(45deg, #616161 0%, #000000 40%, #000000 60%, #2e7d32 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(45deg, #616161 0%, #000000 40%, #000000 60%, #2e7d32 100%); /* IE 10+ */
+	background: linear-gradient(45deg, #616161 0%, #000000 40%, #000000 60%, #2e7d32 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#616161', endColorstr='#2e7d32', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+	padding:0.5rem;
+}
+.ALive-footer img{
+	height: 2.2rem;
+	width: auto;
+}
+.ALive-copyright, .ALive-credits{
+	color:#cccccc;
+	font-size:14px;
+	display:block;
+	text-align:center;
+	padding:0.2rem;
+}
+.ALive-copyright a, .ALive-credits a{
+	color:#673AB7;
+	font-weight:600;
+	text-decoration: none;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	
+}
+.ALive-copyright a:hover, .ALive-credits a:hover {
+	color: #990099;
+}
+
+.tolis-class {
+    color: red;
+}

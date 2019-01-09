@@ -1,0 +1,402 @@
+/*
+* =======================================================
+* Document Info
+* =======================================================
+*
+*  @Doc Description: metaco web site main CSS Custom Stylesheet (Based at Foundation 6.4.2 CSS Framework   http://foundation.zurb.com/)
+*  @Author: d4rth0nyx
+*  @Creation Date: 2017-11-29
+*  @Copyright: Copyright (c) 2017 techasoft - http://techasoft.gr
+*  @Version: 1.0.1
+*
+*  @Status: Development
+*  @Last Modified Date: 2017-11-29
+*  @Last Modify User: d4rth0nyx
+*
+*
+* //////////////// Actions TO DO //////////////////////
+
+1) 
+2) 
+3) 
+4) 
+5) 
+========================================================= 
+*/
+
+
+/* METAco Primary Styles
+==================================*/
+body {
+	background:#1a1b1f;
+	font-family: 'Roboto', sans-serif;
+  color:#a0a1a3;
+}
+h1{
+	font-family: 'Roboto', sans-serif;
+  color:#fefefe;
+  text-align:center;
+}
+h2{
+	color:#a0a1a3;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: -1px;
+	text-align:center;
+	text-transform:uppercase;
+}
+h3{
+	font-family: 'Roboto', sans-serif;
+	color:#a0a1a3;
+  text-align:center;
+
+}
+h4{
+	font-family: 'Roboto', sans-serif;
+	color:#a0a1a3;
+  text-align:center;
+}
+h5{
+	font-family: 'Roboto', sans-serif;
+	color:#a0a1a3;
+  text-align:center;
+}
+h6{
+	color:#a0a1a3;
+	font-family: 'Roboto', sans-serif;
+	text-align:center;
+}
+p{
+	line-height:1.5em;
+}
+
+
+/* METAco Animation Timers
+==================================*/
+.METAco-delay-02s {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+.METAco-delay-03s {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+.METAco-delay-04s {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+.METAco-delay-05s {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+.METAco-delay-06s {
+	animation-delay: 0.6s;
+	-webkit-animation-delay: 0.6s;
+}
+
+.METAco-delay-07s {
+	animation-delay: 0.7s;
+	-webkit-animation-delay: 0.7s;
+}
+.METAco-delay-08s {
+	animation-delay: 0.8s;
+	-webkit-animation-delay: 0.8s;
+}
+
+.METAco-delay-09s {
+	animation-delay: 0.9s;
+	-webkit-animation-delay: 0.9s;
+}
+.METAco-delay-1s {
+	animation-delay: 1s;
+	-webkit-animation-delay: 1s;
+}
+.METAco-delay-12s {
+	animation-delay: 1.2s;
+	-webkit-animation-delay: 1.2s;
+}
+/* METAco Main site Canvas
+==================================*/
+canvas{
+	margin: 0%;
+	
+}
+/* Custom back-on-top button
+==================================*/
+.back-top {
+  position: fixed;
+  bottom: 1%;
+	right: 1%;
+	z-index: 99;
+}
+.back-top a {
+  color: #919191;
+}
+.back-top:hover a {
+  color: #6dd32e;
+} 
+/* METAco Header section Styles
+==================================*/
+
+.METAco-header{
+/*	background:url(../images/header-image.png);*/
+
+  background: #222222; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(136deg, #000000 , #10143d); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(136deg, #000000 , #10143d); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(136deg, #000000 , #10143d); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to 136deg, #000000 ,  #10143d); /* Standard syntax */
+
+  max-width: 100%;
+  height: auto;
+  background-size: 100% 100%;
+  padding:5em 5em 0em 5em;
+}
+.METAco-header h1{
+	font-family: 'Roboto', sans-serif;
+  color:#fefefe;
+  text-align:center;
+  font-weight:bold;
+  padding:1em 0em 0em 0em;
+  
+}
+.METAco-header h5{
+	font-family: 'Roboto', sans-serif;
+	color: #a0a1a3;
+  text-align:center;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.METAco-header figure{
+  text-align:center;
+}
+.METAco-header img{
+	width: auto;
+	height: auto;
+}
+/* METAco Navigation section Styles
+==================================*/
+
+.METAco-main-navigation-outer{
+	background:#242424;
+	border-bottom:0.15rem solid #6875ff;
+	box-shadow:0 1rem 2rem -3rem #76b900;
+}
+.METAco-main-navigation-outer .menu{
+	background:#242424;
+}
+.METAco-main-navigation {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.METAco-main-navigation * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.METAco-main-navigation li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1.5em;
+  padding: 0;
+}
+.METAco-main-navigation a {
+  padding: 0.3em 0;
+  color: #fefefe;
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+}
+.METAco-main-navigation a:before,
+.METAco-main-navigation a:after {
+  height: 3px;
+  position: absolute;
+  content: '';
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  background-color: #6875ff;
+  width: 0;
+}
+.METAco-main-navigation a:before {
+  top: 0;
+  left: 0;
+}
+.METAco-main-navigation a:after {
+  bottom: 0;
+  right: 0;
+}
+.METAco-main-navigation a:hover,
+.METAco-main-navigation .current a {
+  color: #6875ff;
+}
+.METAco-main-navigation a:hover:before,
+.METAco-main-navigation .current a:before,
+.METAco-main-navigation a:hover:after,
+.METAco-main-navigation .current a:after {
+  width: 100%;
+}
+
+
+/* METAco Company section Styles
+==================================*/
+
+.METAco-company{
+	background:#1a1b1f;
+}
+.METAco-company span{
+	color:#6875ff;
+}
+.METAco-company-list-icon i{
+	
+
+	display:block;
+	color:#2a3ae9;
+	
+}
+
+/* METAco Services section Styles
+==================================*/
+
+.METAco-services{
+	background:#10143d;
+	
+}
+.METAco-services span{
+	color:#6875ff;
+}
+.METAco-services-list-icon i{
+	
+
+	display:block;
+	color:#2a3ae9;
+	
+}
+
+
+/* METAco Products section Styles
+==================================*/
+
+.METAco-products{
+	background:#1a1b1f;
+}
+.METAco-products span{
+	color:#6875ff;
+}
+.METAco-products-list-icon i{
+	
+
+	display:block;
+	color:#2a3ae9;
+	
+}
+
+/* METAco Solutions section Styles
+==================================*/
+
+.METAco-solutions{
+	background:#10143d;
+}
+.METAco-solutions span{
+	color:#6875ff;
+}
+.METAco-solutions-list-icon i{
+	
+
+	display:block;
+	color:#2a3ae9;
+	
+}
+
+/* METAco Research section Styles
+==================================*/
+
+.METAco-research{
+	background:#1a1b1f;
+}
+.METAco-research span{
+	color:#6875ff;
+}
+.METAco-research-list-icon i{
+	
+
+	display:block;
+	color:#2a3ae9;
+	
+}
+
+/* METAco Contact section Styles
+==================================*/
+
+.METAco-contact{
+	background:#10143d;
+}
+.METAco-contact span{
+	color:#6875ff;
+}
+.METAco-contact i{
+	/*  display:block; We want to show inline icon and text */
+	color:#2a3ae9;
+}
+
+/* METAco Group section Styles
+==================================*/
+
+.METAco-group-outer{
+	background:#111111;
+	border-bottom:0.15rem solid #858585;
+	box-shadow:0 1rem 2rem -3rem #76b900;
+}
+.METAco-group-outer .menu{
+	background:#111111;
+}
+.METAco-group-outer h6{
+	color: #bcbcbc;
+  
+}
+.METAco-group-outer img{
+	height: 1.7rem;
+	width: auto;
+	
+}
+/* METAco Footer section Styles
+==================================*/
+
+.METAco-footer{
+	background: #10143d;/* Old Browsers */
+	background: -moz-linear-gradient(-45deg, #10143d 0%, #000000 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right bottom, color-stop(0%, #10143d), color-stop(100%, #000000));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(-45deg, #10143d 0%, #000000 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg, #10143d 0%, #000000 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg, #10143d 0%, #000000 100%); /* IE 10+ */
+	background: linear-gradient(135deg, #10143d 0%, #000000 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10143d', endColorstr='#000000', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+	
+	padding:0.5rem;
+}
+.METAco-footer img{
+	height: 2.2rem;
+	width: auto;
+}
+.METAco-copyright, .METAco-credits{
+	color:#cccccc;
+	font-size:14px;
+	display:block;
+	text-align:center;
+	padding:0.2rem;
+}
+.METAco-copyright a, .METAco-credits a{
+	color:#673AB7;
+	font-weight:600;
+	text-decoration: none;
+	transition:all 0.3s ease-in-out;
+	-moz-transition:all 0.3s ease-in-out;
+	-webkit-transition:all 0.3s ease-in-out;
+	
+}
+.METAco-copyright a:hover, .METAco-credits a:hover {
+	color: #990099;
+}
+

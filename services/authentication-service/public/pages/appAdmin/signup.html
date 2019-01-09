@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="el" class="uk-height-1-1" />
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>tsp/v0.1.0 | Admin - SignUp</title>
+    <link rel="icon" href="../../img/favicon.ico">
+    <!-- <link rel="stylesheet" href="../../css/style.css" /> -->
+    <link rel="stylesheet" href="../../css/tas-ui-kit.css" />
+    <script src="../../js/tas-ui-kit.js"></script>
+    <script src="../../js/tas-ui-kit-icons.js"></script>
+</head>
+
+<body class="uk-height-1-1">
+    <div class="uk-section uk-section-default">
+        <div class="uk-container uk-text-center">
+            <h1>Techasoft Services Platform</h1>
+            <h2>(tsp) v 0.1.0</h2>
+        </div>
+    </div>
+    <div class="uk-section uk-section-default">
+        <div class="uk-container">
+            <div class="uk-flex uk-flex-center uk-flex-middle">
+                <div uk-grid class="uk-child-width-1-1@s">
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body uk-width-1-1@s">
+                            <h4 class="uk-card-title">Authentication Service</h4>
+                            <hr />
+                            <div class="uk-text-center">
+                                <img src="../../img/techasoft-symbol.svg" alt="techasoft-symbol" height="40%" width="40%" />
+                            </div>
+                            <h4 class="uk-text-center">Admin Area</h4>
+                            <hr class="uk-divider-icon" />
+                            <form class="uk-form-stacked" id="admin-signup-form" method="post" action="#">
+                                <fieldset class="uk-fieldset">
+                                    <legend class="uk-legend">SignUp Form</legend>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="email">Email</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline">
+                                                <span class="uk-form-icon" uk-icon="icon: mail"></span>
+                                                <input class="uk-input" type="email" name="email" id="email" placeholder="you@example.com">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="firstName">First Name</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline">
+                                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                <input class="uk-input" type="text" name="firstName" id="firstName" placeholder="Your First Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="lastName">Last Name</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline">
+                                                <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                                <input class="uk-input" type="text" name="lastName" id="lastName" placeholder="Your Last Name">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="password">Password</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline">
+                                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                <input class="uk-input" type="password" name="password" id="password" placeholder="Create a password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <label class="uk-form-label" for="confPassword">Confirm Password</label>
+                                        <div class="uk-form-controls">
+                                            <div class="uk-inline">
+                                                <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                                <input class="uk-input" type="password" name="confPassword" id="confPassword" placeholder="Confirm your password">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-margin">
+                                        <button class="uk-button uk-button-secondary" type="button" onclick="signup()">Καταχώρηση</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+            <div class="uk-section uk-section-default">
+                <div class="uk-container uk-text-center">
+                    <div >
+                        <span class="uk-text-small uk-text-muted">&copy; 2017 
+                            <script>new Date().getFullYear()>2017&&document.write("- "+new Date().getFullYear());
+                            </script>
+                        techasoft</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+    <!-- <script src="js/vue.js"></script> -->
+    <script src="../../js/axios.js"></script>
+
+    <script>
+        var signup = function () {
+            console.log("starting signup procedure...")
+            axios.post('http://localhost:10000/api/v01/appAdmin/signup', {
+                email: document.getElementById('email').value,
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                password: document.getElementById('password').value,
+                confPassword: document.getElementById('confPassword').value,
+            }).then(function (response) {
+                console.log(response);
+                console.log(response.data);
+                if (response.data.success) {
+                    console.log(`message: ${response.data.message}`);
+                    console.log(`user: ${response.data.user}`);
+                    console.log(`account: ${response.data.account}`);
+                } else {
+                    console.log('response.data.success:' + response.data.success);
+                }
+
+            });
+
+
+        }
+    </script>
+
+</body>
+
+</html>

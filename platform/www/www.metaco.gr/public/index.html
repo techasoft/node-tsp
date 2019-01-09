@@ -1,0 +1,377 @@
+<!doctype html>
+<html class="no-js" lang="el" dir="ltr">
+  <head>
+  
+ <!-- 
+* =======================================================
+* Document Info
+* =======================================================
+*
+*  @Doc Description: metaco web site main index page (Based at Foundation 6.4.2 CSS Framework   http://foundation.zurb.com/)
+*  @Author: d4rth0nyx
+*  @Creation Date: 2017-11-29
+*  @Copyright: Copyright (c) 2017 techasoft - http://techasoft.gr
+*  @Version: 1.0.1
+*
+*  @Status: Development
+*  @Last Modified Date: 2017-11-29
+*  @Last Modify User: d4rth0nyx
+*
+*
+* //////////////// Actions TO DO //////////////////////
+
+1) meta tags
+2) html5 secmantics (section, main, article etc)  article -> section -> div
+3) na dokimaso grid-margin-x
+4) Optimaze svg files
+5) Na dokimaso to <nav> mesa sto header
+========================================================= 
+-->
+
+
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+      <!-- Foundation 6 with Flex Grid Enabled: We using CSS media queries.
+      To ensure proper rendering and touch zooming for all devices -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+      <!-- We set website title and favicons -->
+      <title>metaco.gr</title>
+      <link rel="icon" href="favicon.png" type="image/png">
+      <link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
+
+      <!-- We link website webfonts from google fonts service -->
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=greek" rel="stylesheet">  <!-- Roboto Web Font -->
+      <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>  <!-- Font Awesome iconic Web Font Version 5.0.1-->
+
+      <!-- We set website css frameworks / libraries and custom rules -->
+      <link rel="stylesheet" href="css/foundation.min.css" type="text/css">  <!-- Foundation 6 popular HTML, CSS, and JS framework in the world for building responsive, mobile-first projects on the web. -->
+      <link rel="stylesheet" href="css/animate.min.css"  type="text/css"> <!-- Animate is css library that gives many premade animation effects to objects -->
+      <link rel="stylesheet" href="css/app.css" type="text/css"/>  <!-- Custom css rules for techasol website / overriding Foundation 6 rules -->
+      <!-- <link rel="stylesheet" href="css/media_queries.css" type="text/css"> --> <!-- Custom Media Query css rules for techasol website / gives responsive layouts for every device --> 
+
+      <!-- We using PIE.htc file for Microsoft Internet Explorer 6-9 browsers, to get functional css styles -->
+      <!-- [if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif] -->
+  
+    </head>
+    <body onload="init();">
+      <!-- METAco-header_section-start -->
+      <header id="header">
+        <div class="grid-x text-center METAco-header" >
+          <div class="cell">
+          <figure class="animated fadeInDown METAco-delay-07s">
+              <a href="#navigation_bar"><img src="images/metaco-logo.svg" alt="metaco-logo"></a>
+            </figure>
+            <h1 class="animated fadeInDown METAco-delay-07s">Κατασκευαστικές Λύσεις</h1>
+            
+          </div>
+        </div>
+      </header>
+      <!-- METAco-header_section-end -->
+          
+    <!-- METAco-main-navigation_section-start -->
+    <nav id="nav">
+      <!-- METAco-mobile-main-navigation-start -->
+      <div class="title-bar" data-responsive-toggle="METAco-responsive-navigation-bar" data-hide-for="medium">
+        <div class="title-bar-left">    
+          <div class="title-bar-title"><img src="images/metaco-symbol.svg" alt="metaco-symbol"></div>
+        </div>
+        <div class="title-bar-right">    
+          <button class="menu-icon" type="button" data-toggle="METAco-responsive-navigation-bar"></button>
+        </div>
+      </div>
+      <!-- METAco-mobile-main-navigation-end -->
+      <!-- METAco-medium/large-main-navigation-start -->
+      <div class="top-bar METAco-main-navigation-outer" id="METAco-responsive-navigation-bar">
+        <div class="top-bar-left">
+          <ul class="menu align-center-middle vertical medium-horizontal METAco-main-navigation">
+            <li><a href="#company" class="smooth-scroll">ΕΤΑΙΡΙΑ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+            <li><a href="#services" class="smooth-scroll">ΥΠΗΡΕΣΙΕΣ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+            <li><a href="#products" class="smooth-scroll">ΠΡΟΪΟΝΤΑ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+            <li><img src="images/metaco-symbol.svg" alt="metaco-symbol"></li>
+            <li><a href="#solutions" class="smooth-scroll">ΛΥΣΕΙΣ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+            <li><a href="#research" class="smooth-scroll">ΕΡΕΥΝΑ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+            <li><a href="#contact" class="smooth-scroll">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>  <!-- Custom class with custom javascript for scroll effect -->
+          </ul>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+          </ul>
+        </div>
+      </div>
+      <!-- METAco-medium/large-main-navigation-end -->
+      </nav>
+      <!-- METAco-main-navigation_section-end -->
+    
+      <!-- METAco-main_section-start -->
+      <main id="main">
+      
+   
+         <!-- METAco-Under_Construction_Canvas-start -->
+         <div class="grid-x align-center-middle cell">  <!-- We put grid-x & cell together for canvas to be responsive!!!! must check -->
+            <canvas id='under_construction_canvas'>Canvas not supported by your browser</canvas>
+          </div>
+        <!-- METAco-Under_Construction_Canvas-end -->
+  
+  
+     <!--METAco-company_section-start-->
+     <section  id="company" class="grid-x text-center METAco-company">
+       <div class="cell">
+         <h2>ΕΤΑΙΡΙΑ</h2>
+         <p>Η πολυετής εμπειρία στον χώρο των ηλεκτρονικών και των διακτυακών υποδομών,
+            μας βοηθά να προσφέρουμε πάντα στοχευμένες και αξιόπιστες υπηρεσίες στους συνεργάτες μας.</p>
+       </div>
+      <div class="medium-6 large-6 cell">
+        <div class="grid-y align-center-middle " style="height: 100%;">
+          <img src="images/metaco-company.svg" alt="metaco-company">
+        </div>
+      </div>
+      <div class="medium-6 large-6 cell">
+        <div>
+          <span><i class="fas fa-building fa-lg"></i></span>
+        </div>
+        <div>
+          <p>Η metaco δραστηριοποιείται στον χώρο των ηλεκτρονικών κατασκευών και στην κατασκευή
+             διακτυακών υποδομών. Απαρτίζεται από στελέχη και προσωπικό με πολυετή εμπειρία
+             στον συγκεκριμένο χώρο.</p>
+        </div>
+      </div>
+     </section>
+  
+  
+  
+  <!--METAco-company_section-end-->
+  
+    <!--METAco-services_section-start-->
+    
+    <section  id="services" class="grid-x text-center METAco-services">
+      <div class="cell">
+          <h2>ΥΠΗΡΕΣΙΕΣ</h2>
+          <p>Η πολυετής εμπειρία στον χώρο των ηλεκτρονικών και των διακτυακών υποδομών,
+                μας βοηθά να προσφέρουμε πάντα στοχευμένες και αξιόπιστες υπηρεσίες στους συνεργάτες μας.</p>
+      </div>
+      <div class="medium-6 large-6 cell">
+              
+                      <div>
+                          <span><i class="fas fa-cogs fa-lg"></i></span>
+                      </div>
+                      <div>
+                         
+                          <p>Σύντομα θα εμπλουτίσουμε το περιεχόμενο της ιστοσελίδας με τις υπηρεσίες μας.</p>
+                      </div>
+                 
+                 
+                 
+                 
+      </div>
+      <div class="medium-6 large-6 cell">
+          <div class="grid-y align-center-middle " style="height: 100%;">
+                  <img src="images/metaco-services.svg" alt="metaco-services">
+          </div>
+      </div>
+    </section>
+  
+  
+  
+  <!--METAco-services_section-end-->
+  
+  
+    <!--METAco-products_section-start-->
+    
+    <section  id="products" class="grid-x text-center METAco-products">
+      <div class="cell">
+          <h2>ΠΡΟΪΟΝΤΑ</h2>
+          <p>Η πολυετής εμπειρία στον χώρο των ηλεκτρονικών και των διακτυακών υποδομών,
+                μας βοηθά να προσφέρουμε πάντα στοχευμένα και αξιόπιστα προϊόντα στους συνεργάτες μας.</p>
+      </div>
+      <div class="medium-6 large-6 cell">
+          <div class="grid-y align-center-middle " style="height: 100%;">
+                  <img src="images/metaco-products.svg" alt="metaco-products">
+          </div>
+      </div>
+      <div class="medium-6 large-6 cell">
+       
+                <div>
+                    <span><i class="fas fa-cogs fa-lg"></i></span>
+                </div>
+                <div>
+                    
+                    <p>Σύντομα θα εμπλουτίσουμε το περιεχόμενο της ιστοσελίδας με τα προϊόντα μας.</p>
+                </div>
+        
+            
+            
+           
+      </div>
+  
+    </section>
+  
+  
+  
+  <!--METAco-products_section-end-->
+  
+    <!--METAco-solutions_section-start-->
+    
+    <section  id="solutions" class="grid-x text-center METAco-solutions">
+      <div class="cell">
+          <h2>ΛΥΣΕΙΣ</h2>
+          <p>Η πολυετής εμπειρία στον χώρο των ηλεκτρονικών και των διακτυακών υποδομών,
+                μας βοηθά να προσφέρουμε πάντα στοχευμένες και αξιόπιστες λύσεις στους συνεργάτες μας.</p>
+      </div>
+      <div class="medium-6 large-6 cell">
+             
+                      <div>
+                          <span><i class="fas fa-cogs fa-lg"></i></span>
+                      </div>
+                      <div>
+                          
+                          <p>Σύντομα θα εμπλουτίσουμε το περιεχόμενο της ιστοσελίδας με τις λύσεις μας.</p>
+                      </div>
+             
+                  
+      </div>
+      <div class="medium-6 large-6 cell">
+          <div class="grid-y align-center-middle " style="height: 100%;">
+                  <img src="images/metaco-solutions.svg" alt="metaco-solutions">
+          </div>
+      </div>
+    </section>
+  
+  
+  
+  <!--METAco-solutions_section-end-->
+  
+  
+    <!--METAco-research_section-start-->
+    
+    <section  id="research" class="grid-x text-center METAco-research">
+      <div class="cell">
+          <h2>ΕΡΕΥΝΑ</h2>
+          <p>Στην metaco δεν μένουμε στάσιμοι, φροντίζουμε πάντα να ενημερωνόμαστε και να κάνουμε έρευνα,
+              πάνω σε νέες τεχνολογίες και πρότυπα στον χώρο δραστηριότητας μας. Η δυνατότητα να
+              προσφέρουμε αγαθά τελευταίας και ασφαλούς τεχνολογιάς στους συνεργάτες μας, αποτελεί για εμάς τον
+              βασικό στόχο λειτουργίας.</p>
+      </div>
+      <div class="medium-6 large-6 cell">
+          <div class="grid-y align-center-middle " style="height: 100%;">
+                  <img src="images/metaco-research.svg" alt="metaco-research">
+          </div>
+      </div>
+      <div class="medium-6 large-6 cell">
+       
+                <div>
+                    <span><i class="fas fa-flask fa-lg"></i></span>
+                </div>
+                <div>
+                    
+                    <p>Σύντομα θα εμπλουτίσουμε το περιεχόμενο της ιστοσελίδας με τα πεδία έρευνας μας.</p>
+                </div>
+        
+           
+      </div>
+  
+    </section>
+  
+  
+  
+  <!--METAco-research_section-end-->
+  
+    <!--METAco-contact_section-start-->
+    
+    <section  id="contact" class="grid-x align-center-middle METAco-contact">
+        <div class="cell text-center">
+          <h2>ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+          <p>Η επικοινωνία με τους συνεργάτες μας είναι σημαντική, θα χαρούμε να σας εξυπηρετήσουμε.</p>
+        </div>
+        <div class="cell medium-6 large-6">
+          <div class="cell text-center">
+            <span><i class="fas fa-at fa-lg"></i></span>
+            <p>Σύντομα θα εμπλουτίσουμε το περιεχόμενο της ιστοσελίδας με τα στοιχεία επικοινωνίας μας.</p>
+          </div>
+          <div class="grid-x align-center-middle">
+          <div class="cell small-offset-6 medium-offset-6 large-offset-6">
+            <ul class="fa-ul no-bullet">
+              <li><span class="fa-li"><i class="fas fa-phone fa-lg"></i></span>210-xxxxxxx</li>
+              <li><span class="fa-li"><i class="fas fa-envelope fa-lg"></i></span>xxxxx@metaco.gr</li>
+              <li><span class="fa-li"><i class="fas fa-map-marker-alt fa-lg"></i></span>Αθήνα, Αττική, Ελλάδα</li>
+            </ul>
+          </div>
+        </div>
+        </div>
+        <div class="cell medium-6 large-6">
+          <div class="grid-y align-center-middle " style="height: 100%;">
+            <img src="images/metaco-contact.svg" alt="metaco-contact">
+          </div>
+        </div>
+      </section>
+  <!--METAco-contact_section-end-->
+  
+  
+  
+  
+        
+  </main>
+  <!-- METAco-main_section-end --> 
+  
+  
+  
+  <!-- METAco-group_section-start -->
+      <div class="top-bar METAco-group-outer">
+          <div class="top-bar-left">
+            <ul class="menu align-center-middle">
+              
+              <li><a href="http://www.techasol.gr"><img src="images/techasol-logo.svg" alt="techasol-logo"></a></li>
+  
+              <li><a href="http://www.techasoft.gr"><img src="images/techasoft-logo.svg" alt="techasoft-logo"></a></li>
+  
+              
+  
+              <li><a href="http://www.agoralive.gr"><img src="images/agoralive-logo.svg" alt="agoralive-logo"></a></li>
+  
+              <li><a href="http://www.metaco.gr"><img src="images/metaco-logo.svg" alt="metaco-logo"></a></li>
+  
+            </ul>
+          </div>
+          <div class="top-bar-right">
+            <ul class="menu">
+            </ul>
+          </div>
+        </div>
+      <!-- METAco-group_section-end -->
+  
+    
+   
+  
+      <!-- METAco-footer_section-start -->
+      <footer id="footer">
+      <div class="grid-x grid-padding-x text-center METAco-footer">
+          <div class="large-12 cell">
+              <div class="METAco-footer-logo"><a href="#"><img src="images/metaco-symbol.svg" alt="metaco-symbol"></a></div>
+              <span class="METAco-copyright">Copyright &copy; metaco 2017. All Rights Reserved</span>
+              <div class="METAco-credits">Design &amp; Development by <a href="http://www.techasoft.gr/">techasoft</a></div>
+              <div><a href="http://www.techasoft.gr"><img src="images/techasoft-logo.svg" alt="techasoft-logo"></a> </div>
+          </div>
+        </div>
+      </footer>
+      <!-- METAco-footer_section-end -->
+  
+      
+      
+      
+    <!-- TAS-BACK_ON_TOP_section-start -->
+    <div class="back-top">
+        <a href="#"><i class="fas fa-chevron-circle-up fa-3x"></i></a>
+      </div>
+    <!-- TAS-BACK_ON_TOP_section-end -->
+      
+   <!-- We set website javascript frameworks / libraries and custom libraries -->
+   <script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>  <!-- this will include JQuery library -->
+   <script type="text/javascript" src="js/vendor/what-input.js"></script>  <!-- this will include every plugin and utility required by Foundation 6.4 -->
+   <script type="text/javascript" src="js/vendor/foundation.min.js"></script>
+   <script type="text/javascript" src="js/app.js"></script>
+   <script src="https://code.createjs.com/createjs-2013.05.14.min.js"></script>
+   <script type="text/javascript" src="js/vendor/under-construction-canvas.js"></script>
+
+    </body>
+  </html>
