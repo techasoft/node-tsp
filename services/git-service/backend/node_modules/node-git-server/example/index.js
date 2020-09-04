@@ -24,8 +24,8 @@ const port = process.env.PORT || 7005;
 
 const repos = new Server(path.normalize(path.resolve(__dirname, 'tmp')), {
     autoCreate: true,
-    authenticate: (type, repo, user, next) => {
-      console.log(type, repo); // eslint-disable-line
+    authenticate: ({ type, repo, user, headers }, next) => {
+      console.log(type, repo, headers); // eslint-disable-line
       if(type == 'push') {
         user((username, password) => {
           console.log(username, password); // eslint-disable-line
@@ -39,9 +39,17 @@ const repos = new Server(path.normalize(path.resolve(__dirname, 'tmp')), {
 
 repos.on('push', (push) => {
     console.log(`push ${push.repo} / ${push.commit} ( ${push.branch} )`); // eslint-disable-line
-    repos.list((err, result) => {
-        console.log(result); // eslint-disable-line
+
+    repos.list((err, results) => {
+        push.log(' ');
+        push.log('Hey!');
+        push.log('Checkout these other repos:');
+        for(const repo of results) {
+          push.log(`- ${repo}`);
+        }
+        push.log(' ');
     });
+
     push.accept();
 });
 
@@ -53,8 +61,8 @@ repos.on('fetch', (fetch) => {
 
 repos.listen(port, {
   type,
-  key: fs.readFileSync('./privatekey.pem'),
-  cert: fs.readFileSync('./certificate.pem')
+  key: fs.readFileSync(path.resolve(__dirname, 'privatekey.pem')),
+  cert: fs.readFileSync(path.resolve(__dirname, 'certificate.pem'))
 }, (error) => {
     if(error) return console.error(`failed to start git-server because of error ${error}`); // eslint-disable-line
     console.log(`node-git-server running at ${type}://localhost:${port}`); // eslint-disable-line
