@@ -1,15 +1,14 @@
-import * as express from 'express';
+import express from 'express';
 import {
   GraphQLOptions,
   HttpQueryError,
   runHttpQuery,
   convertNodeHttpToRequest,
 } from 'apollo-server-core';
+import { ValueOrPromise } from 'apollo-server-types';
 
 export interface ExpressGraphQLOptionsFunction {
-  (req?: express.Request, res?: express.Response):
-    | GraphQLOptions
-    | Promise<GraphQLOptions>;
+  (req: express.Request, res: express.Response): ValueOrPromise<GraphQLOptions>;
 }
 
 // Design principles:
@@ -17,29 +16,20 @@ export interface ExpressGraphQLOptionsFunction {
 // - simple, fast and secure
 //
 
-export interface ExpressHandler {
-  (req: express.Request, res: express.Response, next): void;
-}
-
 export function graphqlExpress(
   options: GraphQLOptions | ExpressGraphQLOptionsFunction,
-): ExpressHandler {
+): express.Handler {
   if (!options) {
     throw new Error('Apollo Server requires options.');
   }
 
   if (arguments.length > 1) {
-    // TODO: test this
     throw new Error(
       `Apollo Server expects exactly one argument, got ${arguments.length}`,
     );
   }
 
-  const graphqlHandler = (
-    req: express.Request,
-    res: express.Response,
-    next,
-  ): void => {
+  return (req, res, next): void => {
     runHttpQuery([req, res], {
       method: req.method,
       options: options,
@@ -47,11 +37,19 @@ export function graphqlExpress(
       request: convertNodeHttpToRequest(req),
     }).then(
       ({ graphqlResponse, responseInit }) => {
-        Object.keys(responseInit.headers).forEach(key =>
-          res.setHeader(key, responseInit.headers[key]),
-        );
-        res.write(graphqlResponse);
-        res.end();
+        if (responseInit.headers) {
+          for (const [name, value] of Object.entries(responseInit.headers)) {
+            res.setHeader(name, value);
+          }
+        }
+
+        // Using `.send` is a best practice for Express, but we also just use
+        // `.end` for compatibility with `connect`.
+        if (typeof res.send === 'function') {
+          res.send(graphqlResponse);
+        } else {
+          res.end(graphqlResponse);
+        }
       },
       (error: HttpQueryError) => {
         if ('HttpQueryError' !== error.name) {
@@ -59,17 +57,20 @@ export function graphqlExpress(
         }
 
         if (error.headers) {
-          Object.keys(error.headers).forEach(header => {
-            res.setHeader(header, error.headers[header]);
-          });
+          for (const [name, value] of Object.entries(error.headers)) {
+            res.setHeader(name, value);
+          }
         }
 
         res.statusCode = error.statusCode;
-        res.write(error.message);
-        res.end();
+        if (typeof res.send === 'function') {
+          // Using `.send` is a best practice for Express, but we also just use
+          // `.end` for compatibility with `connect`.
+          res.send(error.message);
+        } else {
+          res.end(error.message);
+        }
       },
     );
   };
-
-  return graphqlHandler;
 }
